@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title> Mouseout function in javascript </title>  
+<style>  
+#demoDIV {  
+border: 1px solid black;  
+}  
+#datas {  
+color: gree;  
+}  
+</style>  
+</head>  
+<body>  
+<h2> JavaScript Mouse out Method </h2>  
+<p id = "datas"> </p>  
+<div id = "demoDIV" onmouseover = "demoDIVFunction()" onmouseout = "demoOutFunction()" >  
+The javascript mouse-out event works after removing the pointer on the particular tag. It is a mouse event to handle functionality to disable the mouseout function.  
+</div>  
+<script>  
+function demoDIVFunction() {  
+document.getElementById("datas").innerHTML = "JavaScript Mouse Out Method activates successfully!!!";  
+document.getElementById("demoDIV").style.fontSize = "18px";  
+document.getElementById("demoDIV").style.color = "red";  
+}  
+function demoOutFunction() {  
+document.getElementById("datas").innerHTML = "JavaScript Mouse out Method activates successfully!!!";  
+document.getElementById("demoDIV").style.fontSize = "12px";  
+document.getElementById("demoDIV").style.color = "black";  
+}  
+</script>  
+</body>  
+</html>  

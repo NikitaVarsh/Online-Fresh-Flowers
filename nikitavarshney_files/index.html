@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Cafes Near Me</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+body{
+    background-image: url('./OIP\ \(1\).jpeg');background-size: cover;background-repeat: repeat;
+    }
+</style>
+</head>
+</body>
+    
+    <header>
+        <h1 style="color: palevioletred;font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;">Cafes Near Me</h1>
+        <nav>
+            <ul>
+                <li><a href="#about"><i>ABOUT</i></a></li>
+                <li><a href="#cafes"><i>CAFES</i></a></li>
+                <li><a href="#contact"><i>CONTACT</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="section">
+        <h2 style="color:rgb(7, 66, 118);font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;font-weight: bolder;font-style: oblique;font-size:xx-large;">About Us</h2>
+        <p style="color: aliceblue;"><b><i><MARQUEE>Welcome to Good Cafes Near Me! We're dedicated to helping you find the best cafes in your area.</MARQUEE></i></b></p>
+    </section>
+
+    <section id="cafes" class="section">
+        <h2>Featured Cafes</h2>
+        <div id="cafe-list"></div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have a question or suggestion? Feel free to reach out to us!</p>
+        <form id="contact-form">
+            <label for="Name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Good Cafes Near Me. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

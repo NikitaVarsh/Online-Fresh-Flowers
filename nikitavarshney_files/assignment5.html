@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Event Example</title>
+</head>
+<body>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="option1">Monday</option>
+  <option value="option2">Tuesday</option>
+  <option value="option3">Wednesday</option>
+</select>
+<script>
+function myFunction() {
+var selectElement = document.getElementById("mySelect");
+    var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+    console.log("Selected option: " + selectedOption);
+}
+</script>
+</body>
+</html>

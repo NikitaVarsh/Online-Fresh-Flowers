@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Website</title>
+    <style>
+        /* Styles for navigation menu */
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .menu li {
+            float: left;
+        }
+
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu li a:hover {
+            background-color: #111;
+        }
+
+        /* Dropdown menu */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            z-index: 1;
+        }
+
+        .dropdown li {
+            float: none;
+        }
+
+        .dropdown li a {
+            padding: 12px 16px;
+        }
+
+        .menu li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#faculty">Faculty</a></li>
+    <li class="dropdown">
+        <a href="#">Courses</a>
+        <ul class="dropdown">
+            <li><a href="#undergrad">Undergraduate</a></li>
+            <li><a href="#grad">Graduate</a></li>
+        </ul>
+    </li>
+    <li><a href="#activities">Activities</a></li>
+</ul>
+
+<div style="padding:20px;">
+    <h2>Welcome to our Department!</h2>
+    <p>This is the homepage content.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text Box Focus Detection</title>
+</head>
+<body>
+
+    <input type="text" id="myTextBox" onblur="textBoxFocused()">
+	<div id="d" ></div>
+    <script>
+        function textBoxFocused() {
+            document.getElementById("d").innerHTML="Text box is focused!";
+			document.getElementById("myTextBox").style.backgroundColor="cyan";
+        }
+    </script>
+</body>
+</html>

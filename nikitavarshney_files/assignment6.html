@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Submit Event Example</title>
+</head>
+<body>
+<form id="myForm" onsubmit="return validateForm()">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <button type="submit">Submit</button>
+</form>
+<script>
+function validateForm() {
+    var username = document.getElementById("username").value;
+    if (username.trim() === "") {
+        alert("Please enter a username.");
+        return false;
+    }
+    return true;
+}
+</script>
+</body>
+</html>
